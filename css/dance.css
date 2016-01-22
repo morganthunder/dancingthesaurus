@@ -1,0 +1,11 @@
+#dance-floor {
+    position: relative;
+}
+
+.dancing-word {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+}

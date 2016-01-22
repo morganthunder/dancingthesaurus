@@ -9,8 +9,9 @@
     <!-- CSS  -->
     <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
     <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
- <link href="css/palette.css" type="text/css" rel="stylesheet" >
-
+    <link href="css/palette.css" type="text/css" rel="stylesheet" >
+    <link href="css/dance.css" type="text/css" rel="stylesheet" >
+</head>
 
 
 
@@ -66,7 +67,7 @@
 <div class="section no-pad-bot" id="index-banner"  style="margin-top: 0 !important;">
     <div class="container" style="height: 450px" ;>
 
-        <h2 class="text_h center header cd-headline letters type">
+        <h2 class="text_h center header cd-headline letters type" id="prompt">
             <span></span> 
             <span class="cd-words-wrapper waiting">
                 <b class="is-visible">Just type in keywords...</b>
@@ -74,6 +75,7 @@
                 <b>Watch synonyms dance!</b>
             </span>
         </h2>
+        <span id="dance-floor"></span>
     </div>
 
 
@@ -81,7 +83,7 @@
 
 <!--Dance Button-->
 <p align="center">
-<a class="waves-effect waves-light btn-large">Dance!</a>
+<a class="waves-effect waves-light btn-large dance-btn">Dance!</a>
 </p>
 <!--Word Entry-->
 <div class="section no-pad-bot" id="word-entry">
@@ -363,6 +365,7 @@
     <!--  Scripts-->
     <script src="min/plugin-min.js"></script>
     <script src="min/custom-min.js"></script>
+    <script src="js/dance.js"></script>
 
     </body>
 </html>
