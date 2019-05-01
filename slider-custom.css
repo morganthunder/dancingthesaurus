@@ -1,0 +1,129 @@
+.slider-handle {background-image: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; border: 2px solid #FFFFFF !important; background-color: #06435F}
+.slider-track-low, .slider-track-high {background: #DDDDDD !important;}
+.slider.slider-horizontal .slider-selection, .slider.slider-horizontal .slider-track-low, .slider.slider-horizontal .slider-track-high {background: #008ABB;}
+.slider.slider-horizontal {width: 95%;padding-top:10px;padding-left:10px;}
+.slider.slider-horizontal .slider-tick-label-container .slider-tick-label {font-size: 12px; z-index: 1000;}
+.form-slider {padding: 10px;}
+.slider-tick {-webkit-box-shadow: none; box-shadow: none; background: #DDDDDD; background-image: none; opacity: 1;}
+.slider-tick.in-selection {background: #008ABB; background-image: none; opacity: 1;}
+.slider.slider-horizontal {margin-bottom: 25px !important;}
+.slider.slider-horizontal .slider-tick-label-container .slider-tick-label {padding-top: 0;}
+input{
+	
+	font-size:20px !important;
+}
+#quote-table {width: 100%; border: 1px solid #E5E5E5; margin: 20px 0 0 0;}
+#quote-table td {overflow: hidden; vertical-align: top;}
+#quote-table .slider-cell {padding: 0 40px 0 40px;}
+#quote-table tr:first-child td.slider-cell {padding-top: 10px !important;}
+#quote-table .value-cell {width: 175px; font-size: 26px; font-weight: 200; padding: 10px 5px 0 20px}
+#quote-table tr:first-child td.value-cell {padding-top: 20px;}
+#quote-table .value-cell small {width: 100%; display: block; font-size: 13px; font-weight: 600; line-height: 18px}
+#quote-table .value-cell input {display: inline-block; z-index: 40000; height: 32px; border: 0; background: #FAFAFA;}
+#quote-table .value-cell input#loan-size-input {width: 105px; }
+#quote-table .value-cell input#loan-term-input {width: 38px; text-align: right; padding-right: 7px;}
+#quote-table .value-cell input#loan-interest-input {width: 60px; text-align: right; padding-right: 7px;}
+#quote-table .value-cell label {font-weight: 200;}
+#quote-table .value-cell .quote-input-wrapper {border: 1px solid #EAEAEA; padding: 5px 3px 2px 5px; background: #FAFAFA;}
+#quote-table .quote-table-title h2 {margin: 10px; color: #333333; font-size: 26px;}
+#quote-table .quote-table-title p {margin: 10px 10px 0 10px;}
+#quote-table .quote-table-footer {padding: 10px 20px 30px 20px; text-align: center;}
+#quote-table .quote-table-footer p {font-size: 13px; padding: 0 0 5px 0; line-height: 20px;}
+
+#quote-table .value-cell.compare-rates {width: 175px; font-size: 21px !important; font-weight: 200; padding: 10px 5px 0 20px}
+#quote-table .value-cell.compare-rates input#loan-size-input {width: 125px;}
+#quote-table .value-cell.compare-rates input#loan-term-input {width: 45px;}
+#quote-table .value-cell.compare-rates input#loan-interest-input {width: 72px;}
+#quote-table .value-cell.compare-rates input#fee-interest-input {width: 75px; text-align: right; padding-right: 7px;}
+#quote-table .value-cell.compare-rates label[for=loan-term-input] {width: 90px;}
+#quote-table .value-cell.compare-rates label[for=loan-interest-input] {width: 65px;}
+#quote-table .value-cell.compare-rates label[for=fee-interest-input] {width: 62px;}
+
+.content .article-content.rate-comparison {max-width: 1200px; padding-left: 20px; padding-right: 20px;}
+
+.rate-comparison-table {width: 98%; border: 1px solid #E5E5E5; margin: 20px 0.5% 0 0.5%; padding-bottom: 20px; float: left;}
+.rate-comparison-table td {overflow: hidden; vertical-align: top;border:none !important;}
+.rate-comparison-table .slider-cell {padding: 0 40px 0 40px;}
+.rate-comparison-table tr:first-child td.slider-cell {padding-top: 10px !important;}
+.rate-comparison-table .value-cell {width: 175px; font-size: 26px; font-weight: 200; padding: 10px 5px 0 20px}
+.rate-comparison-table tr:first-child td.value-cell {padding-top: 20px;}
+.rate-comparison-table .value-cell small {width: 100%; display: block; font-size: 13px; font-weight: 600; line-height: 18px}
+.rate-comparison-table .value-cell input {display: inline-block; z-index: 40000; height: 32px; border: 0; background: #FAFAFA;}
+.rate-comparison-table .value-cell input#loan-size-input {width: 105px; }
+.rate-comparison-table .value-cell input#loan-term-input {width: 38px; text-align: right; padding-right: 7px;}
+.rate-comparison-table .value-cell input#loan-interest-input {width: 60px; text-align: right; padding-right: 7px;}
+.rate-comparison-table .value-cell label {font-weight: 300;}
+.rate-comparison-table .value-cell input {font-weight: 300;}
+.rate-comparison-table .value-cell .quote-input-wrapper {border: 1px solid #EAEAEA; padding: 5px 3px 2px 5px; background: #FAFAFA;}
+.rate-comparison-table .quote-table-title h2 {margin: 10px; color: #333333; font-size: 26px;}
+.rate-comparison-table .quote-table-title p {margin: 10px 10px 0 10px;}
+.rate-comparison-table .quote-table-footer {padding: 10px 20px 30px 20px; text-align: center;}
+.rate-comparison-table .quote-table-footer p {font-size: 13px; padding: 0 0 5px 0; line-height: 20px;}
+
+.rate-comparison-table .value-cell.compare-rates {width: 200px; font-size: 21px !important; font-weight: 200; padding: 10px 5px 0 20px}
+.rate-comparison-table .value-cell.compare-rates input#loan-size-input {width: 125px;}
+.rate-comparison-table .value-cell.compare-rates input#loan-term-input {width: 45px;}
+.rate-comparison-table .value-cell.compare-rates input#loan-interest-input {width: 72px;}
+.rate-comparison-table .value-cell.compare-rates input#fee-interest-input {width: 75px; text-align: right; padding-right: 7px;}
+.rate-comparison-table .value-cell.compare-rates label[for=loan-term-input] {width: 90px;}
+.rate-comparison-table .value-cell.compare-rates label[for=loan-interest-input] {width: 65px;}
+.rate-comparison-table .value-cell.compare-rates label[for=fee-interest-input] {width: 62px;}
+
+.rate-form-options-form {margin: 6px; background: #eaeaea;}
+.rate-form-options {padding: 8px 12px; text-align: center;}
+.rate-form-options label {font-weight: 400;}
+.rate-form-options select {font-size: 17px; border-radius: 0; padding: 3px; border: 1px solid #cfcfcf; margin: 0 4px;}
+
+#quote-repayments-table-wrapper {padding: 20px 20px 0 20px;}
+#quote-repayments-table {background: #FAFAFA; width: 100%; font-size: 15px;}
+#quote-repayments-table td, #quote-repayments-table th {text-align: center; border: 1px solid #EAEAEA}
+#quote-repayments-table td {font-weight: 200;}
+#quote-repayments-table td.month-value, #quote-repayments-table td.month-total, #quote-repayments-table td.rate-title {font-weight: 400;}
+#quote-repayments-table th, #quote-repayments-table tfoot td {font-weight: 600;}
+#quote-repayments-table thead, #quote-repayments-table tfoot  {background: #EAEAEA;}
+
+#quote-repayments-table.rates-compared-output {margin-bottom: 20px;}
+#quote-repayments-table.rates-compared-output tbody td {font-weight: 400 !important;}
+#quote-repayments-table.rates-compared-output td, #quote-repayments-table.rates-compared-output th {text-align: left}
+#quote-repayments-table.rates-compared-output tbody tr:nth-child(odd) {background: #fefefe;}
+#quote-repayments-table.rates-compared-output tbody tr:nth-child(even) {background: #f9f9f9;}
+#quote-repayments-table.rates-compared-output tbody tr.rates-subheading {background: #e8f1f5;}
+#quote-repayments-table.rates-compared-output tbody tr td:first-child {font-weight: 600 !important;}
+
+#quote-repayments-table.rates-compared-output.rates-compared-quote {border: 2px solid #008abb;}
+#quote-repayments-table.rates-compared-output.rates-compared-quote thead {background: #008abb; color: #ffffff;}
+
+.content .article-content.rate-comparison {max-width: 1240px; padding-left: 20px; padding-right: 20px;}
+
+ul.smaller li {font-size: 14px;}
+
+
+@media (max-width: 1200px) {
+
+	.rate-comparison-table {width: 100%; border: 1px solid #E5E5E5; margin: 20px 0 0 0; padding-bottom: 20px; float: none;}
+
+}
+
+@media (max-width: 480px) {
+
+	#quote-table .quote-table-title h2, .rate-comparison-table .quote-table-title h2 {font-size: 20px;}
+	#quote-repayments-table td, #quote-repayments-table th {font-size: 12px; font-weight: 400 !important; padding: 5px;}
+
+}
+
+@media (max-width: 400px) {
+
+	.form-slider {display: none;}
+	#quote-table .slider-cell, .rate-comparison-table .slider-cell {padding: 0;}
+	#quote-table .value-cell, .rate-comparison-table .value-cell {width: 95%;}
+	#quote-repayments-table td, #quote-repayments-table th {font-size: 11px;}
+
+}
+
+/*fix for fixed payments */
+.fixed_cost{
+	margin-bottom: 10px;
+}
+.fixed_cost input {
+	width:125px !important;
+}
