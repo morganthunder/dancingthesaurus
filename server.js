@@ -28,15 +28,17 @@ app.get ('/', function (req, res){
 });
 
 app.post ('/synonym', function (req, res){
+	try {
     wordsearchfunction.querysearch(req, res);   
+	}catch(ex){console.log(ex);}
 });
 
 
 /* listen to post requests and respond accordingly*/
 app.post("/", function (req, res) {
-
+try{
     wordsearchfunction.querysearch(req, res);
-    
+    }catch(ex){console.log(ex);}
 
 });
 
@@ -44,7 +46,7 @@ app.post("/", function (req, res) {
 app.use(express.static(__dirname + ''));
 
 /* Start listening to port 80*/
-server.listen (80);
+server.listen (8080);
 
 
 

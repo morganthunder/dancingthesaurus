@@ -91,13 +91,26 @@ $(document).ready(function() {
     window.addEventListener('deviceorientation', onWindowDeviceOrientation, false);
     window.addEventListener('blur', function() {
 
-        isPaused = true;
+         world.pause();
+            //world.warp(.001);
+            isPaused = true;
+         
+		
+		
+		   
+          
+
+      
+		
+		
 
     }, true);
 
     window.addEventListener('focus', function() {
 
-        isPaused = false;
+   world.unpause();
+            isPaused = false;
+         
 
     }, true);
 
