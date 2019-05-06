@@ -24,7 +24,7 @@ var renderer;
 var maxquantity = 70;
 var step = 0,
     radius = 200,
-    speed = 1;
+    speed = 50;
 var isPaused = true;
 var maxwordcounts = 10;
 var ismagnet = false;
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
         maxquantity = 20;
     }
-
+maxwordcounts=maxquantity/2;
     $("#dance-floor").height($(window).height() - $("#dance-floor").offset().top - 20);
     $(".dance-btn").height($(".dance-btn").width());
 
@@ -668,6 +668,7 @@ $(document).ready(function() {
 
 
     $('#ex23').slider({
+		value:speed,
         formatter: function(value) {
             return value;
 
@@ -712,6 +713,7 @@ $(document).ready(function() {
 
 
     $('#ex24').slider({
+		value:maxwordcounts,
         max: maxquantity,
         formatter: function(value) {
             return value;
@@ -779,7 +781,7 @@ $(document).ready(function() {
                             "id": $("#word" + (j + 1)).attr("id"),
                             "pattern": 1,
                             "serial": 0,
-                            "words": [$("#word" + (j + 1)).val()].concat(data[synonymid + "_synonyms"][1])
+                            "words": shuffle([$("#word" + (j + 1)).val()].concat(data[synonymid + "_synonyms"][1]))
                         });
 
 
@@ -921,7 +923,7 @@ $(document).ready(function() {
                                 "id": $("#word" + (j + 1)).attr("id"),
                                 "pattern": 1,
                                 "serial": 0,
-                                "words": [$("#word" + (j + 1)).val()].concat(data[synonymid + "_synonyms"][1])
+                                "words": shuffle([$("#word" + (j + 1)).val()].concat(data[synonymid + "_synonyms"][1]))
                             });
 
                             $("#word" + (j + 1)).next().hide(); //.css("border","1px solid red");
@@ -1041,6 +1043,17 @@ $(document).ready(function() {
 
 
 });
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
 
 function dance() {
 
